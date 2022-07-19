@@ -286,7 +286,9 @@ export default function ReportPdf() {
                 {item.brand_name + " - " + item.type_name + " - " + item.btu}
               </td>
               <td className="p-2">{item.room_name.slice(0, -8)}</td>
-              <td className="p-2">{item.replaced}</td>
+              <td className="p-2">
+                {item.replaced === "" ? "N/A" : item.replaced}
+              </td>
             </tr>
           ))}
         </tbody>
