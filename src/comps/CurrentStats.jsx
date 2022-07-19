@@ -83,6 +83,12 @@ export default function CurrentStats() {
               AC BTU
             </th>
             <th scope="col" class="px-6 py-3">
+              Zone Name
+            </th>
+            <th scope="col" class="px-6 py-3">
+              Region Name
+            </th>
+            <th scope="col" class="px-6 py-3">
               Location
             </th>
             <th scope="col" class="px-6 py-3">
@@ -93,10 +99,6 @@ export default function CurrentStats() {
             </th>
             <th scope="col" class="px-6 py-3">
               Date
-            </th>
-
-            <th scope="col" class="px-6 py-3">
-              <span class="sr-only">Edit</span>
             </th>
           </tr>
         </thead>
@@ -109,6 +111,8 @@ export default function CurrentStats() {
               btu={item.btu}
               site={item.site_name}
               room={item.room_name.slice(0, -8)}
+              zone={item.zone_name}
+              region={item.region_name}
               technician={item.firstname + " " + item.lastname}
               phone={item.phone}
               date={item.date_done}

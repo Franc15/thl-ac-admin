@@ -11,18 +11,12 @@ export default function CurrentStatsRow(props) {
       <td class="px-6 py-4">{props.brand}</td>
       <td class="px-6 py-4">{props.type}</td>
       <td class="px-6 py-4">{props.btu}</td>
+      <td class="px-6 py-4">{props.zone}</td>
+      <td class="px-6 py-4">{props.region}</td>
       <td class="px-6 py-4">{props.room}</td>
       <td class="px-6 py-4">{props.technician}</td>
       <td class="px-6 py-4">{props.phone}</td>
       <td class="px-6 py-4">{props.date.split("T")[0]}</td>
-      <td class="px-6 py-4 text-right">
-        <a
-          href="#"
-          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-        >
-          Edit
-        </a>
-      </td>
     </tr>
   );
 }

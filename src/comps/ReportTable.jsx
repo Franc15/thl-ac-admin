@@ -93,6 +93,12 @@ export default function ReportTable() {
               AC BTU
             </th>
             <th scope="col" class="px-6 py-3">
+              Zone
+            </th>
+            <th scope="col" class="px-6 py-3">
+              Region
+            </th>
+            <th scope="col" class="px-6 py-3">
               Location
             </th>
 
@@ -110,6 +116,8 @@ export default function ReportTable() {
               btu={item.btu}
               site={item.site_name}
               room={item.room_name.slice(0, -8)}
+              region={item.region_name}
+              zone={item.zone_name}
               technician={item.firstname + " " + item.lastname}
               phone={item.phone}
             />
