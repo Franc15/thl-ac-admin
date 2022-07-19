@@ -228,6 +228,7 @@ export default function InsertRoom() {
                   setRoomId(e.target.value);
                 }}
               >
+                <option value="">Select Room</option>
                 {rooms.map((room) => (
                   <option key={room.id} value={room.id}>
                     {room.room_name}
